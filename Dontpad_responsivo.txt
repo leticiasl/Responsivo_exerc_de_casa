@@ -1,0 +1,1396 @@
+>>LINK IMAGEM MENU HAMBURGUER:
+ABRIR O LINK E BAIXAR A IMAGEM PRA DENTRO DA PASTA IMAGENS DO SEU PROJETO:
+https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png
+
+
+Turma 4 - Responsivo 
+
+>> Link no github com tópicos da aula:
+https://github.com/reprograma/On4-Responsivo
+
+***SEMPRE LEMBRAR: Sempre que trabalharmos com 'MEDIA QUERIES' temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
+
+	Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os diferentes tamanhos dos dispositivos
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+Cross-browser testing:
+
+Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
+
+>>> Como testar?: BrowserStack, Google insights, What is my screen resolution, Chrome DevTools.
+
+>>Joguinho FLEXBOX:
+	https://flexboxfroggy.com/#pt-br
+
+
+>>>LINKS PARA CONSULTA:
+
+https://www.w3schools.com/Css/css_rwd_mediaqueries.asp https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/ https://drafts.csswg.org/css-values-3/#font-relative-lengths https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/ https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/ https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/
+
+
+__________
+
+>>Imagem para projeto:
+https://s2.glbimg.com/YFCUDCCqcdhZzzEihroj2d6_Pxo=/620x430/e.glbimg.com/og/ed/f/original/2017/01/24/home-office.jpg
+
+
+
+>>ARQUIVO RESET CSS
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+>>ARQUIVO HTML 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Responsive Website</title>
+  <link rel="stylesheet" href="./reset/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <header class="navbar">
+    <div class="headersite container">
+      <div class="branding">
+        <h1><span>Responsive</span>Website</h1>
+      </div>
+      <nav class="navlist">
+        <ul class="linklist">
+          <li class="home" target="_blank">Home</li>
+          <li class="about">Sobre</li>
+          <li class="services">Serviços</li>
+          <img class="minimenu" src="imagens/menu-hamburger.png">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SEÇAO DE SOBRE -->
+  <section class="portfolio container">
+    <div>
+      <article class="content">
+        <h1>SOBRE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus doloremque ea sequi sapiente atque
+          tenetur, dolorem possimus nam quae laborum accusamus voluptatibus ipsa odit. Earum ipsa architecto quos cum
+          dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, earum! Quae tempore dolor quidem ut,
+          illum alias et, ipsam nihil provident obcaecati modi exercitationem iure saepe mollitia in, maxime sit!</p>
+      </article>
+    </div>
+
+    <!-- IMAGEM À DIREITA -->
+    <aside class="image">
+      <img src="imagens/work.jpeg">
+    </aside>
+  </section>
+
+  <!-- SEÇÃO DE INSERIR E-MAIL -->
+  <section class="register">
+    <div class="contact container">
+      <h1>Deixe seu contato</h1>
+      <form>
+        <input type="e-mail" placeholder="E-mail...">
+        <button type="submit" class="button-1">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>GiseleSantinDev, Copyright © 2019</p>
+  </footer>
+</body>
+</html>
+
+
+>>CÓDIGO CSS:
+
+/* BOA PRÁTICA USAR O VALOR BORDER-BOX PARA BOX-SIZING, POIS JÁ SOMA AUTOMATICAMENTE O VALOR DE PADDING E BORDER QUANDO HOUVER */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0!important;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #d1d1d1;
+  border-bottom: 1px solid #c60b66;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.headersite {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branding,
+.navlist {
+  margin: auto 0;
+}
+
+.branding h1 {
+  font-size: 2em;
+}
+
+.branding span {
+  color: #c60b66;
+}
+
+.linklist {
+  display: flex;
+}
+
+.linklist li {
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.home {
+  color: #c60b66;
+}
+
+.portfolio {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+}
+
+.content {
+  width: 80%;
+  line-height: 30px;
+}
+
+.content h1 {
+  color: #c60b66;
+}
+
+.register {
+  background-color: #c60b66;
+  height: 80px;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer {
+  height: 70px;
+  background-color: #d1d1d1;
+  padding: 25px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.minimenu {
+  display: none;
+}
+
+
+
+
+
+
+ESTER 
+
+***
+
+/* BOA PRÁTICA USAR O VALOR BORDER-BOX PARA BOX-SIZING, POIS JÁ SOMA AUTOMATICAMENTE O VALOR DE PADDING E BORDER QUANDO HOUVER */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0!important;
+    background-color: #f4f4f4;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background-color: #d1d1d1;
+    border-bottom: 1px solid #c60b66;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .headersite {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .branding,
+  .navlist {
+    margin: auto 0;
+  }
+  
+  .branding h1 {
+    font-size: 2em;
+  }
+
+  @media(max-width: 768px){ 
+    .branding h1 {
+        font-size: 1.5em;
+    }
+  }
+  
+  .branding span {
+    color: #c60b66;
+  }
+  
+  .linklist {
+    display: flex;
+  }
+  
+  .linklist li {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  
+
+  @media(max-width: 768px){ 
+    .linklist li {
+        font-size: 1em;
+           }
+    }
+    @media(max-width: 768px) {
+        .image img {
+        width: 290px;
+    }
+}
+
+
+  .home {
+    color: #c60b66;
+  }
+  
+  .portfolio {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+  }
+  
+  .content {
+    width: 80%;
+    line-height: 30px;
+  }
+  
+  .content h1 {
+    color: #c60b66;
+  }
+  
+  .register {
+      background-color: #c60b66;
+      width: 100%;
+      height: 80px;
+      padding: 20px;
+      position: absolute;
+      bottom: 11.8vh;
+    }
+    
+    .contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .contact h1 {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    
+    .footer {
+      height: 70px;
+      background-color: #d1d1d1;
+      padding: 25px;
+      position: fixed; 
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .footer p {
+      text-align: center;
+    }
+    
+    .minimenu {
+      display: none;
+    }
+  
+
+***
+
+
+
+
+
+Atualizado
+
+
+
+>>LINK IMAGEM MENU HAMBURGUER:
+ABRIR O LINK E BAIXAR A IMAGEM PRA DENTRO DA PASTA IMAGENS DO SEU PROJETO:
+https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png
+
+
+Turma 4 - Responsivo 
+
+>> Link no github com tópicos da aula:
+https://github.com/reprograma/On4-Responsivo
+
+***SEMPRE LEMBRAR: Sempre que trabalharmos com 'MEDIA QUERIES' temos que usar a metatag de nome VIEWPORT, da seguinte maneira:
+
+	Esta tag diz ao browser para renderizar o conteúdo do site de acordo com os diferentes tamanhos dos dispositivos
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+Cross-browser testing:
+
+Testar seu projeto ou aplicação em diferentes navegadores (browsers) e observar se todos ou a maioria deles mantém estilo e funcionalidades originais sem comprometer sua qualidade de navegaçao/usabilidade.
+
+>>> Como testar?: BrowserStack, Google insights, What is my screen resolution, Chrome DevTools.
+
+>>Joguinho FLEXBOX:
+	https://flexboxfroggy.com/#pt-br
+
+
+>>>LINKS PARA CONSULTA:
+
+https://www.w3schools.com/Css/css_rwd_mediaqueries.asp https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/ https://drafts.csswg.org/css-values-3/#font-relative-lengths https://www.softwaretestinghelp.com/how-is-cross-browser-testing-performed/ https://nextecommerce.com.br/design-responsivo-ou-entrega-adaptativa-o-que-e-melhor-para-o-marketing-digital/ https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/
+
+
+__________
+
+>>Imagem para projeto:
+https://s2.glbimg.com/YFCUDCCqcdhZzzEihroj2d6_Pxo=/620x430/e.glbimg.com/og/ed/f/original/2017/01/24/home-office.jpg
+
+
+
+>>ARQUIVO RESET CSS
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+>>ARQUIVO HTML 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Responsive Website</title>
+  <link rel="stylesheet" href="./reset/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <header class="navbar">
+    <div class="headersite container">
+      <div class="branding">
+        <h1><span>Responsive</span>Website</h1>
+      </div>
+      <nav class="navlist">
+        <ul class="linklist">
+          <li class="home" target="_blank">Home</li>
+          <li class="about">Sobre</li>
+          <li class="services">Serviços</li>
+          <img class="minimenu" src="imagens/menu-hamburger.png">
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- SEÇAO DE SOBRE -->
+  <section class="portfolio container">
+    <div>
+      <article class="content">
+        <h1>SOBRE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus doloremque ea sequi sapiente atque
+          tenetur, dolorem possimus nam quae laborum accusamus voluptatibus ipsa odit. Earum ipsa architecto quos cum
+          dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, earum! Quae tempore dolor quidem ut,
+          illum alias et, ipsam nihil provident obcaecati modi exercitationem iure saepe mollitia in, maxime sit!</p>
+      </article>
+    </div>
+    <!-- IMAGEM À DIREITA -->
+    <aside class="image">
+      <img src="imagens/work.jpg">
+    </aside>
+  </section>
+  <!-- SEÇÃO DE INSERIR E-MAIL -->
+  <section class="register">
+    <div class="contact container">
+      <h1>Deixe seu contato</h1>
+      <form>
+        <input type="e-mail" placeholder="E-mail...">
+        <button type="submit" class="button-1">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>GiseleSantinDev, Copyright &copy; 2019</p>
+  </footer>
+</body>
+</html>
+
+>>CÓDIGO CSS:
+
+
+/* BOA PRÁTICA USAR O VALOR BORDER-BOX PARA BOX-SIZING, POIS JÁ SOMA AUTOMATICAMENTE O VALOR DE PADDING E BORDER QUANDO HOUVER */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0!important;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #d1d1d1;
+  border-bottom: 1px solid #c60b66;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.headersite {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branding,
+.navlist {
+  margin: auto 0;
+}
+
+.branding h1 {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .branding h1 {
+    font-size: 1.5em;
+  }
+}
+
+.branding span {
+  color: #c60b66;
+}
+
+.linklist {
+  display: flex;
+}
+
+.linklist li {
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .linklist li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .image img {
+    display: none;
+  }
+}
+
+.home {
+  color: #c60b66;
+}
+
+.portfolio {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+}
+
+.content {
+  width: 80%;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    line-height: 27px;
+  }
+}
+
+
+.content h1 {
+  color: #c60b66;
+}
+
+.register {
+    background-color: #c60b66;
+    width: 100%;
+    height: 80px;
+    padding: 28px;
+    position: absolute;
+    bottom: 7.8vh;
+  }
+
+  @media (max-width: 768px){
+    .register {
+      bottom: 11.8vh;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .button-1 {
+    font-size: 1.3em;
+  }
+
+  @media (max-width: 768px){
+    .button-1 {
+      font-size: 1.1rem;
+    }
+  }
+  .footer {
+    height: 70px;
+    background-color: #d1d1d1;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  @media (max-width: 768px){
+    .footer p {
+      font-size: 12px;
+    }
+  }
+
+  .minimenu {
+    display: none;
+  }
+
+
+>>MEDIA QUERIES:
+1280px (desktop) 
+768px (tablet - vertical) 
+420px (mobile)
+
+
+
+
